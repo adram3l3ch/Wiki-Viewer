@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { BiSearch } from "react-icons/bi";
+import { ImCancelCircle } from "react-icons/im";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	React.useEffect(() => {
+		objectToArray(results);
+	}, [results]);
+
+	return (
+		<>
+			<header>
+				<h1>Wiki Viewer</h1>
+			</header>
+			<main className={pages[0] ? "active app" : "app"}>
+				<Form
+					clickHandler={clickHandler}
+					searchTerm={searchTerm}
+					setSearchTerm={setSearchTerm}
+					isLoading={isLoading}
+					clear={clear}
+				/>
+				<div className="results">
+					{pages.map((page, index) => (
+						<Result {...page} key={index} />
+					))}
+				</div>
+			</main>
+			<Footer />
+		</>
+	);
+};
 
 export default App;
