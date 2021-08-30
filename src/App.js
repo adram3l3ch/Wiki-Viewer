@@ -6,8 +6,10 @@ import { useGlobalContext } from "./context";
 
 const App = () => {
 	const { objectToArray, results, pages } = useGlobalContext();
+
 	useEffect(() => {
 		objectToArray(results);
+		// eslint-disable-next-line
 	}, [results]);
 
 	return (

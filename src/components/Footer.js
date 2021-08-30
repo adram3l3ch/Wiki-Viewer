@@ -5,7 +5,7 @@ const Footer = () => {
 	return (
 		<footer>
 			<p>
-				<a href={WIKI_RANDOM} target="_blank">
+				<a href={WIKI_RANDOM} target="_blank" rel="noreferrer">
 					Read a random Article
 				</a>
 			</p>
