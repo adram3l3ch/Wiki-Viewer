@@ -1,12 +1,13 @@
-import { createContext, useContext } from "react";
+import { createContext, useContext, useState } from "react";
+import { WIKI_API } from "./API";
 
 const appContext = createContext();
 
 const ContextProvider = ({ children }) => {
-	const [searchTerm, setSearchTerm] = React.useState("");
-	const [results, setResults] = React.useState();
-	const [pages, setPages] = React.useState([]);
-	const [isLoading, setIsLoading] = React.useState(false);
+	const [searchTerm, setSearchTerm] = useState("");
+	const [results, setResults] = useState();
+	const [pages, setPages] = useState([]);
+	const [isLoading, setIsLoading] = useState(false);
 
 	const objectToArray = (object) => {
 		const array = [];

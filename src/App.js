@@ -1,8 +1,12 @@
-import { BiSearch } from "react-icons/bi";
-import { ImCancelCircle } from "react-icons/im";
+import { useEffect } from "react";
+import Footer from "./components/Footer";
+import Form from "./components/Form";
+import Result from "./components/Result";
+import { useGlobalContext } from "./context";
 
 const App = () => {
-	React.useEffect(() => {
+	const { objectToArray, results, pages } = useGlobalContext();
+	useEffect(() => {
 		objectToArray(results);
 	}, [results]);
 
@@ -12,13 +16,7 @@ const App = () => {
 				<h1>Wiki Viewer</h1>
 			</header>
 			<main className={pages[0] ? "active app" : "app"}>
-				<Form
-					clickHandler={clickHandler}
-					searchTerm={searchTerm}
-					setSearchTerm={setSearchTerm}
-					isLoading={isLoading}
-					clear={clear}
-				/>
+				<Form />
 				<div className="results">
 					{pages.map((page, index) => (
 						<Result {...page} key={index} />
