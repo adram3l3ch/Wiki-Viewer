@@ -1,4 +1,30 @@
-# Getting Started with Create React App
+# About This Project
+
+This is a solution to the Wikipedia Viewer challenge by Freecodecamp.
+
+### The challenge
+
+Users should be able to:
+
+-   View the optimal layout for the game depending on their device's screen size
+
+-   click a button to see a random Wikipedia entry.
+
+-   search Wikipedia entries in a search box and see the resulting Wikipedia entries.
+
+### Links
+
+-   Solution URL: [Github](https://github.com/adram3l3ch/Weather-App)
+-   Live Site URL: [Netlify](https://adramelech-weather-app.netlify.app/)
+
+### Built with
+
+-   Semantic HTML5 markup
+-   CSS custom properties
+-   Flexbox
+-   [React](https://reactjs.org/) - JS library
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
