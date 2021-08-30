@@ -14,8 +14,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Github](https://github.com/adram3l3ch/Weather-App)
--   Live Site URL: [Netlify](https://adramelech-weather-app.netlify.app/)
+-   Solution URL: [Github](https://github.com/adram3l3ch/Wiki-Viewer)
+-   Live Site URL: [Netlify](https://adramelech-wiki-viewer.netlify.app/)
 
 ### Built with
 
