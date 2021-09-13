@@ -3,10 +3,11 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import { ContextProvider } from "./context";
+import { initialState, reducer } from "./reducer";
 
 ReactDOM.render(
 	<React.StrictMode>
-		<ContextProvider>
+		<ContextProvider initialState={initialState} reducer={reducer}>
 			<App />
 		</ContextProvider>
 	</React.StrictMode>,
